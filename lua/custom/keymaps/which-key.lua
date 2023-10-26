@@ -2,7 +2,7 @@ local wk = require "which-key"
 local cmd = require "custom.cmd"
 
 local leaderkey = " "
-
+--
 local general = {
   e = { "<cmd>Neotree toggle<cr>", "Toggle NeoTree" },
   tt = {
@@ -20,7 +20,7 @@ local formatter = {
       require("conform").format {
         lsp_fallback = true,
         async = false,
-        timeout_ms = 500,
+        timeout_ms = 1000,
       }
     end,
     "Format file or range",

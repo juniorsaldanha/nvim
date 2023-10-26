@@ -8,12 +8,12 @@ formatter.setup {
     go = { "goimports-reviser", "gofumpt" },
     -- Use a sub-list to run only the first available formatter
     javascript = { { "prettierd", "prettier" } },
-    json = { "prettierd", "prettier" },
-    css = { "prettierd", "prettier" },
-    yaml = { "prettierd", "prettier" },
-    markdown = { "prettierd", "prettier" },
-    html = { "prettierd", "prettier" },
-    typescript = { "prettierd", "prettier" },
+    json = { { "prettierd", "prettier" } },
+    css = { { "prettierd", "prettier" } },
+    yaml = { { "prettierd", "prettier" } },
+    markdown = { { "prettierd", "prettier" } },
+    html = { { "prettierd", "prettier" } },
+    typescript = { { "prettierd", "prettier" } },
     ["*"] = { "codespell" },
   },
   -- format_on_save = {
@@ -28,7 +28,7 @@ formatter.setup {
       return
     end
     return {
-      timeout_ms = 500,
+      timeout_ms = 1000,
       lsp_fallback = true,
     }
   end,

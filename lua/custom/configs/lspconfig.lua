@@ -7,7 +7,13 @@ if not present then
   return
 end
 
-local servers = { "html", "cssls", "tsserver", "clangd" }
+local servers = {
+  "html",
+  "cssls",
+  "tsserver",
+  "clangd",
+  "pyright",
+}
 
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
