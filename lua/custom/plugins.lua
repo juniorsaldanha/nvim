@@ -148,6 +148,11 @@ local plugins = {
       end, 200)
     end,
   },
+
+  {
+    "christoomey/vim-tmux-navigator",
+    event = "BufReadPre",
+  },
 }
 
 return plugins
