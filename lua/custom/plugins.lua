@@ -153,6 +153,17 @@ local plugins = {
     "christoomey/vim-tmux-navigator",
     event = "BufReadPre",
   },
+
+  {
+    "olexsmir/gopher.nvim",
+    dependencies = { -- dependencies
+      "nvim-lua/plenary.nvim",
+      "nvim-treesitter/nvim-treesitter",
+    },
+    config = function()
+      require "custom.configs.gopher"
+    end,
+  },
 }
 
 return plugins

@@ -32,6 +32,8 @@ M.mason = {
     "goimports-reviser",
     "gomodifytags",
     "golines",
+    "impl",
+    "iferr",
 
     -- Python
     "pyright",
